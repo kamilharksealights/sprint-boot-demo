@@ -15,4 +15,10 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'build/libs/spring-boot-demo.jar'
+        }
+    }
 }

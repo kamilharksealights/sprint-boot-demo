@@ -41,6 +41,10 @@ test {
 	useJUnitPlatform()
 }
 
+bootJar {
+	archiveFileName = "spring-boot-demo.jar"
+}
+
 allprojects.each { p ->
 
 	def included = []
